@@ -1,3 +1,5 @@
+Normal forms
+
 Required reading
 ================
 
@@ -122,6 +124,33 @@ functionally dependent on $B$ or $C$.
 If $A \Rightarrow B$ and $B \Rightarrow C$ then $C$ is transitively
 dependent on $A$.
 
+
+Primary key
+===========
+
+A primary key must be UNIQUE and NOT NULL.
+
+Simple
+------
+
+Simple primary key is one that involves only ONE column.
+
+Any column directly defined as a `PRIMARY KEY` will be a simple primary key.
+
+
+Compound
+--------
+
+A compound key is a primary key composed of more than 1 column.
+
+
+Candidate keys
+==============
+
+In practice there may be a number of possible columns and groups thereof that could be used as a primary key.
+Each column or combination of columns is termed a candidate key.
+
+
 Normal forms
 ============
 
@@ -129,8 +158,9 @@ Normal forms
 ---
 
 The first normal form (1NF) requires atomic values (i.e. no repeating
-groups or multi-valued attributes) in each row of a table. Approaches to
-achieving:
+groups or multi-valued attributes) in each row of a table.
+
+Approaches to achieving:
 
 1.  Flattening table: duplicate rows
 
